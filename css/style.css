@@ -1,0 +1,211 @@
+:root {
+    --vermelho: #e50914;
+    --preto: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */ 
+body {
+    background: var(--preto);
+    font-family: sans-serif;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin-left: 30px;
+}
+
+
+.logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-size: 40px;
+}
+
+.your {
+    color: #97e1f8;
+}
+
+header nav a {
+
+    text-decoration: none;
+    color: rgb(150, 150, 153);
+    margin-right: 35px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* filme principal */
+.filme-principal {
+    font-size: 16px;
+    background-image: url('./../img/capaSimpsons.jpg'), linear-gradient(rgba(0, 0, 0, .50), rgba(46, 46, 46, 0.356) 100%); 
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+
+
+    
+    
+    
+  }
+
+  .container {
+      background: rgba(0, 0, 0, 0.58);
+      padding: 0 30px 0 30px;
+      height: 100%;
+      border-bottom: 10px solid rgba(175, 175, 175, 0.301);
+ 
+      
+     
+      } 
+
+
+.filme-principal .descricao {
+    margin-bottom: 30px;
+    margin-top: 4%;
+    width: 70%;
+
+}
+
+.titulo {
+    margin-top: 15%;
+
+    font-size: 44px;
+    font-family: sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+} 
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.box-filme:hover {
+    border: 1px solid black;
+    transform: scale(1.0); 
+    
+}
+
+.novos {
+    height: 100%;
+    width: 100%;
+}
+
+.botao i {
+    margin-right: 10px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.box {
+    background-color: #000000;
+    height: 300px;
+    width: 200px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    transition: 1s;
+    
+}
+
+.box:hover {
+    border: 10px solid black;
+    transform: scale(1.5); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+
+
+.titles {
+    padding-bottom: 40px;
+    padding-top: 60px;
+    margin-left: 20px;
+}
+
+.terror {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.m {
+    border-top: 1px solid rgba(255, 255, 255, 0.034);
+    padding: 100px;
+    text-align: center;
+    font-size: 100px;
+    color: red;
+}
+
+
+#myName {
+    font-size: 35px;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    #myName {
+        font-size: 15px;
+    }
+
+    .m {
+        font-size: 40px;
+    }
+
+    .botao {
+        margin-bottom: 6px;
+        width: 180px;
+        
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    header a {
+        font-size: 13px;
+        font-weight: 500;
+        
+        
+    }
+    
+}
